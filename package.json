@@ -1,0 +1,38 @@
+{
+  "name": "tr-create",
+  "version": "0.0.1",
+  "description": "Finds __text to be translated__ in a specified HTML file and creates en.json plus new HTML file with {{ 'nameSpace.textToBeTranslated' | translate }}.",
+  "main": "dist/index.js",
+  "bin": {
+    "tr-create": "./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibetovski/tr-create.git"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel -d dist/ lib/"
+  },
+  "keywords": [
+    "AngularJS",
+    "angularjs-translate",
+    "translate",
+    "dummy",
+    "HTML",
+    "JSON"
+  ],
+  "author": "Iliyan Betovski",
+  "homepage": "https://github.com/ibetovski/tr-create#readme",
+  "preferGlobal": true,
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "filendir": "^1.0.0",
+    "logme": "^0.4.0",
+    "minimist": "^1.2.0"
+  }
+}
