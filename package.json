@@ -1,6 +1,6 @@
 {
   "name": "tr-create",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Finds __text to be translated__ in a specified HTML file and creates en.json plus new HTML file with {{ 'nameSpace.textToBeTranslated' | translate }}.",
   "main": "dist/index.js",
   "bin": {
@@ -33,6 +33,7 @@
   "dependencies": {
     "colors": "^1.1.2",
     "filendir": "^1.0.0",
+    "lodash": "^4.2.1",
     "logme": "^0.4.0",
     "minimist": "^1.2.0"
   }

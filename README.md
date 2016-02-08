@@ -13,7 +13,7 @@ Sometimes we are focused on the implementation and not on the copy text. We don'
 
 After the work is done, we run that script and it:
 
-* creates JSON files for translations (`en.json` or `es.json`)
+* creates JSON files for translations (`en.json` or `es.json`) - if your JSON exists, we will merge the new content with the old one and will replace the existing file with the fresh content.
 * creates HTML file with `{{ 'global.someText' | translate }}` placeholder instead of `__some text__`
 
 ### Usage
@@ -95,3 +95,6 @@ Prints this help
 ```
 
 ### MIT License
+
+### Contribute
+If you have an idea or special needs that this tool doesn't cover don't hesitate to fork and add the needed feature. There is only one requirement - use ES6 and babel.
