@@ -78,13 +78,21 @@ tr-create -s [html_source_file] -l [language_json_file] -n [name_space]
 -s,  --source
 HTML file containig __text to translate__ dummy text
 
+-r,  --replace
+Replace the existing HTML with translations content
+
 -n,  --name-space
 Name space to be used in HTML translations: {{ 'nameSpace.textToBeTranslated' | translate }}
 
 -l, --lang
-Which file do you want to create for language?
+Comma separated JSON file name for the languages.
+You can provide full path if you need.
+JSON extension will be added automatically if omitted
+Example:
+-l langs/en.json,langs/es.json
+-l en,es
 
--ol, --only-language
+--ol, --only-language
 Create only a language without HTML file
 
 -t, --target-html
@@ -98,3 +106,14 @@ Prints this help
 
 ### Contribute
 If you have an idea or special needs that this tool doesn't cover don't hesitate to fork and add the needed feature. There is only one requirement - use ES6 and babel.
+
+### Changelog
+
+#### v1.0.0
+
+* Changed `-ol` option to `--ol`
+* Added `-r`, `--replace` option - if set the existing HTML file provided by `-s` will be overwritten with the translations content
+* Multiple JSON files - comma separated: --lang en.json,es.json - or en,es (JSON extension will be added automatically if omitted)
+* Unit tests
+
+#### v0.0.3
